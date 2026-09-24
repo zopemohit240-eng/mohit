@@ -1,0 +1,567 @@
+Log in
+Sign up for free
+You said:
+
+Godavari Institute of Management and Research (GIMR) in Jalgaon is a private management college established in 2001 under the aegis of the Godavari Foundation.Quick FactsAffiliation: Kavayitri Bahinabai Chaudhari North Maharashtra University (KBCNMU), JalgaonApprovals & Accreditation: Approved by AICTE, New Delhi; recognized by the Government of Maharashtra; NAAC B+ accredited; and ISO 9001:2015 certified.Founder President: Dr. Ulhas V. PatilDirector: Dr. Prashant S. WarkeLocation: GIMR Campus, P-54, Near Bharat Petroleum, Additional MIDC, Bhusawal Road, Jalgaon – 425003, Maharashtra.Courses OfferedMBA (Master of Business Administration): A full-time, two-year postgraduate program offering various specializations such as Human Resource Management, Hospitality Management, International Business, and Hospital and Healthcare Management (HHM).Campus FacilitiesWi-Fi-enabled campusDigital classrooms and computer IT centerCentral library and information centerHostel facilities (for boys and girls)Gym, sports complex, and canteenWould you like information on the admission criteria, fee structure, or placement details for GIMR Jalgaon? creatye a html code
+
+ChatGPT said:
+Here is a complete, responsive HTML page for Godavari Institute of Management and Research (GIMR), Jalgaon, using the information you provided.
+
+GIMR Jalgaon HTML Website
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIMR Jalgaon | Godavari Institute of Management and Research</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fb;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123c69, #1e73be);
+            color: white;
+            padding: 25px 8%;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: #0b2c4d;
+            padding: 12px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 40, 80, 0.75),
+                        rgba(0, 40, 80, 0.75)),
+                        url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h2 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffb703;
+            color: #17202a;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #ffd166;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #123c69;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .fact-card {
+            background: white;
+            padding: 25px;
+            border-left: 5px solid #1e73be;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+        }
+
+        .fact-card h3 {
+            color: #123c69;
+            margin-bottom: 8px;
+        }
+
+        .courses {
+            background: #eaf3fb;
+        }
+
+        .course-card {
+            background: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .course-card h3 {
+            color: #1e73be;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .specializations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .specializations span {
+            background: #123c69;
+            color: white;
+            padding: 9px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .facility {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+        }
+
+        .facility .icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .leadership {
+            background: #123c69;
+            color: white;
+        }
+
+        .leadership .section-title {
+            color: white;
+        }
+
+        .leaders {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .leader-card {
+            background: white;
+            color: #333;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .leader-card h3 {
+            color: #123c69;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            background: white;
+        }
+
+        .address {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            background: #f5f7fb;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #0b2c4d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .facts-grid,
+            .facilities-grid,
+            .leaders {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            section {
+                padding: 45px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Godavari Institute of Management and Research (GIMR)</h1>
+            <p>Jalgaon, Maharashtra | Established in 2001</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#facts">Quick Facts</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Build Your Future in Management</h2>
+            <p>
+                Godavari Institute of Management and Research (GIMR),
+                Jalgaon, provides management education under the aegis
+                of the Godavari Foundation.
+            </p>
+            <a href="#courses" class="btn">Explore MBA Program</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About GIMR</h2>
+
+            <div class="intro">
+                <p>
+                    Godavari Institute of Management and Research (GIMR)
+                    is a private management college in Jalgaon,
+                    Maharashtra, established in 2001 under the aegis of
+                    the Godavari Foundation.
+                </p>
+
+                <br>
+
+                <p>
+                    The institute offers management education with a
+                    focus on developing professional knowledge, skills,
+                    and leadership capabilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section id="facts">
+        <div class="container">
+            <h2 class="section-title">Quick Facts</h2>
+
+            <div class="facts-grid">
+
+                <div class="fact-card">
+                    <h3>Affiliation</h3>
+                    <p>
+                        Kavayitri Bahinabai Chaudhari North Maharashtra
+                        University (KBCNMU), Jalgaon
+                    </p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>AICTE Approval</h3>
+                    <p>
+                        Approved by the All India Council for Technical
+                        Education (AICTE), New Delhi.
+                    </p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Accreditation</h3>
+                    <p>
+                        NAAC B+ accredited and ISO 9001:2015 certified.
+                    </p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Recognition</h3>
+                    <p>
+                        Recognized by the Government of Maharashtra.
+                    </p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Established</h3>
+                    <p>2001</p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Management</h3>
+                    <p>Godavari Foundation</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="courses">
+        <div class="container">
+
+            <h2 class="section-title">Courses Offered</h2>
+
+            <div class="course-card">
+                <h3>MBA – Master of Business Administration</h3>
+
+                <p>
+                    A full-time, two-year postgraduate management
+                    program designed to develop managerial and
+                    professional skills.
+                </p>
+
+                <h4 style="margin-top:20px;">Specializations</h4>
+
+                <div class="specializations">
+                    <span>Human Resource Management</span>
+                    <span>Hospitality Management</span>
+                    <span>International Business</span>
+                    <span>Hospital & Healthcare Management</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities">
+        <div class="container">
+
+            <h2 class="section-title">Campus Facilities</h2>
+
+            <div class="facilities-grid">
+
+                <div class="facility">
+                    <div class="icon">📶</div>
+                    <h3>Wi-Fi Campus</h3>
+                    <p>Wi-Fi-enabled campus for students and staff.</p>
+                </div>
+
+                <div class="facility">
+                    <div class="icon">💻</div>
+                    <h3>Digital Classrooms</h3>
+                    <p>Modern digital classrooms and computer IT center.</p>
+                </div>
+
+                <div class="facility">
+                    <div class="icon">📚</div>
+                    <h3>Central Library</h3>
+                    <p>Central library and information center.</p>
+                </div>
+
+                <div class="facility">
+                    <div class="icon">🏠</div>
+                    <h3>Hostel</h3>
+                    <p>Hostel facilities available for boys and girls.</p>
+                </div>
+
+                <div class="facility">
+                    <div class="icon">🏋️</div>
+                    <h3>Gym & Sports</h3>
+                    <p>Gym and sports complex for recreational activities.</p>
+                </div>
+
+                <div class="facility">
+                    <div class="icon">🍽️</div>
+                    <h3>Canteen</h3>
+                    <p>On-campus canteen facility for students.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="leadership">
+
+        <div class="container">
+
+            <h2 class="section-title">Leadership</h2>
+
+            <div class="leaders">
+
+                <div class="leader-card">
+                    <h3>Dr. Ulhas V. Patil</h3>
+                    <p>Founder President</p>
+                </div>
+
+                <div class="leader-card">
+                    <h3>Dr. Prashant S. Warke</h3>
+                    <p>Director</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">Campus Location</h2>
+
+            <div class="address">
+
+                <h3>GIMR Campus</h3>
+
+                <p>
+                    P-54, Near Bharat Petroleum,<br>
+                    Additional MIDC, Bhusawal Road,<br>
+                    Jalgaon – 425003,<br>
+                    Maharashtra, India.
+                </p>
+
+                <br>
+
+                <a
+                    class="btn"
+                    href="https://www.google.com/maps/search/?api=1&query=Godavari+Institute+of+Management+and+Research+Jalgaon"
+                    target="_blank">
+                    View on Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Godavari Institute of Management and Research (GIMR)
+        </p>
+
+        <p>
+            Jalgaon, Maharashtra
+        </p>
+
+    </footer>
+
+</body>
+</html>
+
+
+
+No file chosenNo file chosenNo file chosen
+
+Chat with ChatGPT
